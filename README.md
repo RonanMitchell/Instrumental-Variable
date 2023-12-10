@@ -1,7 +1,7 @@
 The purpose of this README is to guide someone through a very basic
 Instrumental Variable statistical estimation methodology. In this case,
 it is applied to a development economics question, in the form of
-estimating a counfound-free measure of the relationship between the
+estimating a confound-free measure of the relationship between the
 status of a student as urban or rural, and their performance in school.
 
 # Required Packs
@@ -291,10 +291,10 @@ bptest(Model4) # p value = 0.2193 (cannot reject null hypothesis of homokedastic
 # I screenshotted the table. Stargazer does not interact well with markdown pdfs but I have since learned better table management and general alternatives to stargazer. 
 
 knitr::include_graphics("Images/Table.png", 
-                         dpi = 300)
+                         dpi = 72)
 ```
 
-<img src="Images/Table.png" width="307" />
+<img src="Images/Table.png" width="100%" height="100%" />
 
 # Residuals of Model
 

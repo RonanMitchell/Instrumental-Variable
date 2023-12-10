@@ -278,12 +278,12 @@ rm(TABLE)
 
 ```
 
-```{r }
+```{r out.width="100%", out.height="100%" }
 
 # I screenshotted the table. Stargazer does not interact well with markdown pdfs but I have since learned better table management and general alternatives to stargazer. 
 
 knitr::include_graphics("Images/Table.png", 
-                         dpi = 300)
+                         dpi = 72)
 
 
 ```

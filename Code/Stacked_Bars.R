@@ -2,7 +2,7 @@ th <-
   
   theme_light() +
   
-  theme(plot.title = element_text(hjust = 0.5, size = 6),
+  theme(plot.title = element_text(hjust = 0.5, size = 7.5),
             legend.key.size = unit(0.25, "cm"),
             legend.text = element_text(size = 7),
             legend.title = element_text(size = 7),
