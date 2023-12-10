@@ -10,7 +10,7 @@ options(repos = "https://cran.mirror.ac.za/")
 
 ```
 
-The purpose of this README is to guide someone through a very basic Instrumental Variable statistical estimation methodology. In this case, it is applied to a development economics question, in the form of estimating a counfound-free measure of the relationship between the status of a student as urban or rural, and their performance in school. 
+The purpose of this README is to guide someone through a very basic Instrumental Variable statistical estimation methodology. In this case, it is applied to a development economics question, in the form of estimating a confound-free measure of the relationship between the status of a student as urban or rural, and their performance in school. 
 
 # Required Packs 
 

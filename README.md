@@ -1,4 +1,9 @@
-<<<<<<< HEAD
+The purpose of this README is to guide someone through a very basic
+Instrumental Variable statistical estimation methodology. In this case,
+it is applied to a development economics question, in the form of
+estimating a counfound-free measure of the relationship between the
+status of a student as urban or rural, and their performance in school.
+
 # Required Packs
 
 -   tidyverse
@@ -283,85 +288,6 @@ bptest(Model4) # p value = 0.2193 (cannot reject null hypothesis of homokedastic
     ## BP = 10.7, df = 8, p-value = 0.2193
 
 ``` r
-# Generate the table using stargazer
-
-TABLE <- 
-
-stargazer(Model1, Model2, Model4, Model3,
-                   title = "Regression Results", 
-                   table.placement = "h",
-                   font.size = "small",
-                   align = TRUE,
-                   type = "text",
-                   header = FALSE,
-                   dep.var.caption = "Test Score (%)",
-                   dep.var.labels.include = FALSE,
-                   covariate.labels = c("Urban", 
-                                        "Failures", 
-                                        "Study Time", 
-                                        "Female",
-                                        "Mother Education",
-                                        "Tutoring",
-                                        "Mother Education x Tutoring", 
-                                        "Study Time x Tutoring"),
-                   model.names = FALSE,
-                   column.labels = c("Specification 1", 
-                                     "Specification 2", 
-                                     "OLS", 
-                                     "IV"))
-```
-
-    ## 
-    ## Regression Results
-    ## ===================================================================================================================
-    ##                                                                 Test Score (%)                                     
-    ##                             ---------------------------------------------------------------------------------------
-    ##                                Specification 1        Specification 2               OLS                  IV        
-    ##                                      (1)                    (2)                     (3)                  (4)       
-    ## -------------------------------------------------------------------------------------------------------------------
-    ## Urban                              5.028**                 3.362                  3.438*               10.343*     
-    ##                                    (2.222)                (2.054)                 (2.004)              (5.628)     
-    ##                                                                                                                    
-    ## Failures                                                 -8.172***               -8.170***            -7.959***    
-    ##                                                           (1.191)                 (1.162)              (1.190)     
-    ##                                                                                                                    
-    ## Study Time                                                2.649**                3.397***             3.540***     
-    ##                                                           (1.078)                 (1.123)              (1.145)     
-    ##                                                                                                                    
-    ## Female                                                   -5.391***               -4.716***            -5.021***    
-    ##                                                           (1.789)                 (1.762)              (1.803)     
-    ##                                                                                                                    
-    ## Mother Education                                          1.983**                2.786***             2.421***     
-    ##                                                           (0.806)                 (0.833)              (0.890)     
-    ##                                                                                                                    
-    ## Tutoring                                                                         26.440***            25.762***    
-    ##                                                                                   (9.083)              (9.236)     
-    ##                                                                                                                    
-    ## Mother Education x Tutoring                                                      -7.332***            -7.379***    
-    ##                                                                                   (2.310)              (2.345)     
-    ##                                                                                                                    
-    ## Study Time x Tutoring                                                            -6.594**             -6.323**     
-    ##                                                                                   (2.960)              (3.012)     
-    ##                                                                                                                    
-    ## Constant                          49.345***              45.379***               42.168***            37.642***    
-    ##                                    (1.958)                (3.536)                 (3.592)              (5.013)     
-    ##                                                                                                                    
-    ## -------------------------------------------------------------------------------------------------------------------
-    ## Observations                         397                    397                     397                  397       
-    ## R2                                  0.013                  0.189                   0.235                0.212      
-    ## Adjusted R2                         0.010                  0.178                   0.219                0.195      
-    ## Residual Std. Error           18.468 (df = 395)      16.827 (df = 391)       16.402 (df = 388)    16.651 (df = 388)
-    ## F Statistic                 5.118** (df = 1; 395) 18.187*** (df = 5; 391) 14.903*** (df = 8; 388)                  
-    ## ===================================================================================================================
-    ## Note:                                                                                   *p<0.1; **p<0.05; ***p<0.01
-
-``` r
-rm(TABLE)
-
-# the reason that I removed the table is because, at the time, I struggled to get the table to look nice on the pdf format that the project was being submitted through. Looking back, there were other solutions. I simply screenshotted the table once it appeared in the R console, and I submitted that image by using the code chunk below to call an image. 
-```
-
-``` r
 # I screenshotted the table. Stargazer does not interact well with markdown pdfs but I have since learned better table management and general alternatives to stargazer. 
 
 knitr::include_graphics("Images/Table.png", 
@@ -414,7 +340,3 @@ Portugal \[Online\]. \[n.d.\]. Available:
 Student Performance \[Online\]. \[n.d.\]. Available:
 <https://www.kaggle.com/datasets/whenamancodes/student-performance> \[10
 June, 2023\]
-=======
-# Instrumental-Variable
-A master's economics (basic) instrumental variable procedure. 
->>>>>>> deea8c9d6557014be1f4ee2a864dddf566ae226c
