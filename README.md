@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Required Packs
 
 -   tidyverse
@@ -413,3 +414,7 @@ Portugal \[Online\]. \[n.d.\]. Available:
 Student Performance \[Online\]. \[n.d.\]. Available:
 <https://www.kaggle.com/datasets/whenamancodes/student-performance> \[10
 June, 2023\]
+=======
+# Instrumental-Variable
+A master's economics (basic) instrumental variable procedure. 
+>>>>>>> deea8c9d6557014be1f4ee2a864dddf566ae226c
