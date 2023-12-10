@@ -3,13 +3,14 @@ output:
  md_document:
    variant: markdown_github
 ---
-
-```{r echo=FALSE, include=FALSE, warnings = FALSE}
+```{r  include=FALSE, warnings = FALSE}
 
 tinytex::install_tinytex(force = TRUE)
 options(repos = "https://cran.mirror.ac.za/")
 
 ```
+
+The purpose of this README is to guide someone through a very basic Instrumental Variable statistical estimation methodology. In this case, it is applied to a development economics question, in the form of estimating a counfound-free measure of the relationship between the status of a student as urban or rural, and their performance in school. 
 
 # Required Packs 
 
@@ -242,7 +243,7 @@ bptest(Model4) # p value = 0.2193 (cannot reject null hypothesis of homokedastic
 
 ```
 
-```{r warning=FALSE}
+```{r include = FALSE, warning=FALSE}
 
 # Generate the table using stargazer
 
